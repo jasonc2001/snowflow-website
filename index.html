@@ -1,99 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SnowFlow Tech</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SnowFlow Tech builds efficient logistics and product systems.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
+export default function SnowFlowLandingPage() {
+  return (
+    <main className="min-h-screen bg-white text-slate-900">
+      <section className="mx-auto max-w-5xl px-6 py-20">
+        <div className="grid gap-12 md:grid-cols-2 md:items-center">
+          <div>
+            <div className="inline-flex rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-600">
+              SnowFlow Logistics LLC
+            </div>
+            <h1 className="mt-6 text-5xl font-semibold tracking-tight text-slate-900">
+              Outdoor & snow sports gear, sold online.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+              SnowFlow is an e-commerce business focused on outdoor and snow sports equipment.
+              We source practical products and deliver them to customers across the United States.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="mailto:hello@snowflow.co"
+                className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+              >
+                Contact us
+              </a>
+              <a
+                href="#about"
+                className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
 
-    header {
-      background: white;
-      padding: 20px 40px;
-      border-bottom: 1px solid #eee;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+          <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-slate-500">Business</div>
+                <div className="mt-2 text-lg font-medium">E-commerce</div>
+              </div>
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-slate-500">Focus</div>
+                <div className="mt-2 text-lg font-medium">Outdoor & snow sports</div>
+              </div>
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-slate-500">Market</div>
+                <div className="mt-2 text-lg font-medium">United States</div>
+              </div>
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-slate-500">Operations</div>
+                <div className="mt-2 text-lg font-medium">Online sales</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
+      <section id="about" className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-5xl px-6 py-16">
+          <div className="grid gap-10 md:grid-cols-3">
+            <div>
+              <h2 className="text-2xl font-semibold tracking-tight">What we do</h2>
+            </div>
+            <div className="md:col-span-2">
+              <p className="text-base leading-8 text-slate-600">
+                SnowFlow Logistics LLC is building an online retail business serving customers who enjoy outdoor adventures and snow sports. Our business is designed to source, market, and distribute products through online channels, while keeping operations simple, flexible, and customer-focused.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      padding: 80px 20px;
-      text-align: center;
-      background: white;
-      margin-top: 20px;
-    }
-
-    .contact {
-      font-size: 18px;
-      margin-top: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      color: #777;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <strong>SnowFlow Tech</strong>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>SnowFlow Tech</h1>
-  <p>Smart infrastructure for logistics and product systems.</p>
-</section>
-
-<section id="about" class="section">
-  <h2>About</h2>
-  <p>
-    SnowFlow Tech focuses on building efficient and flexible systems
-    for logistics, product operations, and global workflows.
-  </p>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p class="contact">
-    Email us at:
-    <br><br>
-    <strong>contact@snowflowtech.com</strong>
-  </p>
-</section>
-
-<footer>
-  © 2026 SnowFlow Tech
-</footer>
-
-</body>
-</html>
+      <footer className="border-t border-slate-200">
+        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <div>© 2026 SnowFlow Logistics LLC</div>
+          <div>Contact: hello@snowflow.co</div>
+        </div>
+      </footer>
+    </main>
+  );
+}
